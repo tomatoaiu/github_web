@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*p, ul, li, a{
+  margin: 0;
+  padding: 0;
+}*/
+
+body{
+  color: #333;
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+nav li{
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+/**************************************************************************/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/**************************************************************************/

@@ -3,34 +3,46 @@
 <head>
   <meta charset="utf-8">
   <title>aaa</title>
-
-  <link rel="stylesheet" media="screen,print" type="text/css" href=".css/common.css" charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./css/utility.css" charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./css/common.css" charset="UTF-8" />
 
 </head>
 <body>
   <div id="wrapper">
     <div id="headwrapper">
       <header>
-        <p>container1</p>
+        <p>headwrapper</p>
       </header>
-      <div id="globalnav">
-        <p>globalnav</p>
+      <div id="globalnav" class="clearfix">
+        <nav>
+          <ul>
+            <li><a href="">a</a></li>
+            <li><a href="">b</a></li>
+            <li><a href="">c</a></li>
+            <li><a href="">d</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
     <div id="main_image">
-      <p>main_image</p>
+      <img src="./image/mainimage.png" alt="メインイメージ" width="2000" height="450" />
     </div>
-    <div id="main">
-        <p>container2</p>
-    </div>
-    <div id="rightnav">
-      <nav>
-        <p>rightnav</p>
-      </nav>
+    <div id="main" class="clearfix">
+        <p>main</p>
+        <div id="contentleft">
+          <nav>
+            <p>contentleft</p>
+          </nav>
+        </div>
+        <div id="contentright">
+          <nav>
+            <p>contentright</p>
+          </nav>
+        </div>
     </div>
     <div id="footerwrapper">
       <footer>
-        <p>footer</p>
+        <p>footerwrapper</p>
       </footer>
     </div>
   </div>
