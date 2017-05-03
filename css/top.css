@@ -7,15 +7,59 @@ body{
   height: 100vh;
   position: relative;
   text-align: center;
-  background-color: rgba(255,100,100,0.1);
+  background-color: rgba(255,160,100,0.3);
 }
-#main{
+.mainItem{
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
 }
-#main p{
+.mainItem p{
   font-size: 100px;
   color: #ff6600;
+  line-height: 0px;
+  font-weight: bold;
+}
+
+li{
+  display: table;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  background-color: #fb9;
+  border: 5px solid #f60;
+  border-radius:90px;
+ -moz-border-radius:90px;
+ -webkit-border-radius: 90px;
+}
+li a{
+  color: #f60;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius:90px;
+ -moz-border-radius:90px;
+ -webkit-border-radius: 90px;
+}
+.circle a:hover{
+  background-color: #f60;
+  color: #fb9;
+}
+.circle a::before,
+.circle a::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+.circle a,
+.circle a::before,
+.circle a::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
