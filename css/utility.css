@@ -6,6 +6,7 @@
 p, ul, li, a, h1, h2, h3, h4{
   font-size: 12px;
   font-weight: normal;
+  line-height: 20px;
 }
 
 body{
@@ -13,13 +14,15 @@ body{
   font-size: 12px;
   line-height: 1.6em;
 }
-
 nav li{
   list-style: none;
 }
-
 nav a{
   text-decoration: none;
+}
+article{
+  width: 100%;
+  display: inline-block;
 }
 
 /**************************************************************************/
@@ -40,3 +43,12 @@ nav a{
 /* End hide from IE-mac */
 
 /**************************************************************************/
+.mb20{
+  margin-bottom: 20px;
+}
+.fl_r{
+  float: right;
+}
+.fl_l{
+  float: left;
+}

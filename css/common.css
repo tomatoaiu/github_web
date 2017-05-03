@@ -1,5 +1,6 @@
 
-#wrapper{
+#wrapper,
+#main_image_wrapper{
   width: 100%;
 }
 
@@ -12,11 +13,9 @@
 }
 
 #headwrapper{
-  background-color: #f0f0f0;
 }
 
 #globalnav{
-  background-color: #234567;
 }
 
 #globalnav ul{
@@ -26,10 +25,12 @@
 #globalnav li{
   float: left;
   display: table;
-  width: 248px;
+  width: 24.8%;
   height: 50px;
-  border: 1px solid #654321;
-  background-color: #987654;
+  border-right: 1px solid #ccc;
+}
+#globalnav li:first-child{
+  border-left: 1px solid #ccc;
 }
 
 #globalnav li:hover{
@@ -43,32 +44,90 @@
   height: 100%;
 }
 
-#main_image{
-  width: 100%;
+#main_image_wrapper{
+  position: relative;
   height: 450px;
-  background-color: #345678;
 }
-
-#main_image img{
+#main_image_wrapper img{
   max-width: 100%;
+}
+#main_image{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 1000px;
+  height: 100%;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: table;
+}
+#main_image a{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 100px;
+  text-decoration: none;
+  color: #333;
+}
+#main_image a{
 }
 
 #main{
-  background-color: #456789;
 }
 
 #contentleft{
   float: left;
   width: 70%;
-  background-color: #56789a;
+}
+#contentleft h3{
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  line-height: 30px;
+}
+#contentleft article{
+  margin-top: 20px;
+}
+#contentleft li{
+  display: inline-block;
+  width: 48%;
+  height: 100px;
+  float: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+#contentleft li:nth-child(2n){
+  float: right;
+}
+#contentleft p{
+  font-size: 20px;
+}
+#contentleft .image_blank{
+  background-color: #ccc;
+  border: 1px solid #666;
+  width: 40%;
+  height: 140px;
 }
 
 #contentright{
   float: right;
   width: 25%;
-  background-color: #6789ab;
 }
-
+#contentright li{
+  display: inline-block;
+  width: 95%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
 #footerwrapper{
-  background-color: #789abc;
+  margin-top: 20px;
+  background-color: #999;
+  width: 100%;
+}
+#footerwrapper footer{
+  margin: 0 auto;
+  padding: 0;
+  width: 1000px;
 }
