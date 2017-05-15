@@ -131,3 +131,48 @@
   padding: 0;
   width: 1000px;
 }
+
+.sectionItem_odd{
+    background-color: #ffcd9b;
+}
+
+.sectionItem_even{
+    background-color: #fed;
+}
+
+/* intro */
+/*****************************************************/
+.intro {
+    text-align: center;
+    width: 100%;
+    color: #ff5a35;
+    font-size: 30px;
+}
+
+.intro section{
+    height: 400px;
+    display: table;
+    width: 100%;
+}
+
+.intro section li{
+    list-style: none;
+    margin-left: -30px;
+}
+.intro h1,
+.intro h2,
+.intro article{
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro h1{
+    font-size: 45px;
+}
+.intro article{
+    height: 100%;
+    line-height: 40px;
+}
+.intro a{
+    text-decoration: none;
+    color: #ff5a35;
+}
