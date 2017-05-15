@@ -5,18 +5,21 @@
   <title>top</title>
   <link rel="stylesheet" type="text/css" href="./css/utility.css" charset="UTF-8" />
   <link rel="stylesheet" type="text/css" href="./css/top.css" charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="./css/click_animation.css" charset="UTF-8" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="./js/top.js"></script>
+  <script src="./js/click_animation.js"></script>
 </head>
 <body>
- <div id="wrapper">
+ <div id="wrapper" class="ripple">
+   <span class="ripple__effect is-random"></span>
    <div class="mainItem">
      <p>tomatoaiu.github.io</p>
    </div>
    <div id="links">
      <ul>
        <li id="circle1" class="circle_tops circle"><a href="./index1.html">練習ページ</a></li>
-       <li id="circle2" class="circle_tops circle"><a href="">自己紹介</a></li>
+       <li id="circle2" class="circle_tops circle"><a href="./index2.html">自己紹介</a></li>
        <li id="circle3" class="circle_tops circle"><a href="">ま</a></li>
        <li id="circle4" class="circle_tops circle"><a href="">だ</a></li>
      </ul>
